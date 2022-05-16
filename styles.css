@@ -13,7 +13,7 @@ header {
   padding: 18px 24px;
 }
 
-.mob_close {
+.material-icons.mob_close {
   display: none;
 }
 
@@ -25,8 +25,13 @@ header {
   color: #d3d3d3;
 }
 
+body {
+  background-image: url(images/bcg_main.png);
+  background-repeat: repeat-x;
+}
+
 main h2 {
-  padding: 36px 24px 18px;
+  padding: 36px 24px 0;
   font-size: 18px;
   font-weight: 500;
 }
@@ -36,13 +41,20 @@ main h1 {
   font-size: 36px;
   font-weight: 900;
   color: #ec5242;
+  Background-image: url(images/bcg_red.jpeg);
+  Background-size: cover;
+  Background-clip: text;
+  -webkit-background-clip: text;
+  Color: transparent;
 }
 
 main .descr {
   margin: 24px 12px;
   padding: 16px;
   font-size: 12px;
-  border: 2px solid black;
+  line-height: 24px;
+  border: 2px solid white;
+  background-image: url(images/bcg_blank.png);
 }
 
 main h3 {
@@ -53,7 +65,7 @@ main h3 {
 
 main .local {
   font-size: 14px;
-  padding: 24px 18px;
+  padding: 12px 18px;
 }
 
 /* Rules for sizing the icon. */
