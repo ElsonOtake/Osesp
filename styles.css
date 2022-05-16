@@ -36,6 +36,15 @@ body {
 
 body.about {
   background-image: url(images/bcg_about.png);
+  text-align: center;
+}
+
+body.about header {
+  text-align: left;
+}
+
+main {
+  padding-bottom: 36px;
 }
 
 main .hello {
@@ -61,10 +70,6 @@ main.index h1 {
   Background-clip: text;
   -webkit-background-clip: text;
   Color: transparent;
-}
-
-main.about {
-  text-align: center;
 }
 
 main.about .hello {
@@ -94,11 +99,14 @@ main .local {
 main .email {
   font-size: 10px;
   line-height: 15px;
+  width: 66%;
+  margin: 0 17%;
 }
 
 main a {
   font-size: 10px;
   font-weight: 700;
+  padding-bottom: 24px;
 }
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
@@ -241,4 +249,29 @@ main a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  background-color: #fff;
+}
+
+.logo h2 {
+  padding: 36px 0 12px;
+}
+
+.logo div {
+  width: 30px;
+  border-bottom: 1px solid #ec5242;
+  margin: auto;
+}
+
+.logo p {
+  font-size: 12px;
+  padding: 12px 0 36px;
+  line-height: 18px;
+}
+
+.logo img {
+  border: 1px solid #d3d3d3;
+  padding: 0 24px;
 }
