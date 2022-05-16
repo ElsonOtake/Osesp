@@ -77,6 +77,7 @@ main .local {
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+.material-icons.red242 { color: #ec5242; }
 
 .material-symbols-outlined.md-48 { font-size: 48px; }
 .material-symbols-outlined.md-96 { font-size: 96px; }
@@ -95,42 +96,42 @@ main .local {
 
 .main_program .bcg_dark {
   width: 100%;
-  background-color: rgba(39, 42, 49, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main_program h2 {
-  padding: 24px 0;
+  padding: 24px 0 12px;
+  font-size: 18px;
+  font-weight: 400;
   text-align: center;
 }
 
 .main_program div {
-  width: 50px;
+  width: 30px;
   border-bottom: 1px solid #ec5242;
-  margin: auto;
+  margin: 0 auto 36px;
+}
+
+.main_program ul {
+  width: calc(100% - 24px);
 }
 
 .main_program ul li ul {
   display: grid;
-  grid-template-columns: 20% 30% 50%;
+  grid-template-columns: 15% 25% calc(60% - 24px);
   align-items: center;
   column-gap: 12px;
-  padding: 24px;
-  background-color: rgba(125, 125, 125, 0.5);
+  padding: 12px;
+  background-color: rgba(75, 75, 75, 0.5);
   margin: 12px;
-}
-
-.main_program ul .material_simbols_outlined {
-  flex-grow: 1;
 }
 
 .main_program ul .progr {
   font-weight: 600;
-  flex-grow: 2;
 }
 
 .main_program ul .activ {
   font-size: 12px;
-  flex-grow: 4;
 }
 
 .main_program button {
@@ -140,4 +141,76 @@ main .local {
   height: 64px;
   border-style: none;
   margin: 48px;
+}
+
+.musicians {
+  width: calc(100% - 48px);
+}
+
+.musicians h2 {
+  text-align: center;
+  padding: 18px;
+}
+
+.musicians div {
+  width: 50px;
+  border-bottom: 1px solid #ec5242;
+  margin: 18px auto;
+}
+
+.musicians article {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: 'img name' 'img role' 'img line' 'img descr';
+  column-gap: 48px;
+  padding: 18px;
+}
+
+.musicians article img {
+  grid-area: img;
+  width: 124px;
+  height: auto;
+}
+
+.musicians article h3 {
+  grid-area: name;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Cocogoose, Helvetica, sans-serif;
+}
+
+.musicians article .role {
+  grid-area: role;
+  color: #ec5242;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 8px 0;
+}
+
+.musicians article div {
+  grid-area: line;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.musicians article .description {
+  grid-area: descr;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 10px;
+}
+
+.musicians button {
+  width: 100%;
+  margin: 0 24px;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
