@@ -22,6 +22,10 @@ header {
 }
 
 .color_white {
+  color: #fff;
+}
+
+.color_gray {
   color: #d3d3d3;
 }
 
@@ -74,23 +78,66 @@ main .local {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
+.material-symbols-outlined.md-48 { font-size: 48px; }
 .material-symbols-outlined.md-96 { font-size: 96px; }
 .material-symbols-outlined.whitefff { color: #fff; }
+.material-symbols-outlined.grayd3 { color: #d3d3d3; }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'wght' 100
+}
 
 .main_program {
   margin: 48px 0 12px;
-  background-color: #272a31;
+  background-image: url(images/bcg_progr.png);
+}
+
+.main_program .bcg_dark {
+  width: 100%;
+  background-color: rgba(39, 42, 49, 0.9);
 }
 
 .main_program h2 {
   padding: 24px 0;
+  text-align: center;
+}
+
+.main_program div {
+  width: 50px;
+  border-bottom: 1px solid #ec5242;
+  margin: auto;
+}
+
+.main_program ul li ul {
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  align-items: center;
+  column-gap: 12px;
+  padding: 24px;
+  background-color: rgba(125, 125, 125, 0.5);
+  margin: 12px;
+}
+
+.main_program ul .material_simbols_outlined {
+  flex-grow: 1;
+}
+
+.main_program ul .progr {
+  font-weight: 600;
+  flex-grow: 2;
+}
+
+.main_program ul .activ {
+  font-size: 12px;
+  flex-grow: 4;
 }
 
 .main_program button {
   background-color: #ec5242;
-  color: #d3d3d3;
+  color: #fff;
   width: calc(100% - 96px);
-  max-width: 400px;
   height: 64px;
   border-style: none;
+  margin: 48px;
 }
