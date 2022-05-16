@@ -21,7 +21,7 @@ header {
   color: #ec5242;
 }
 
-.color_gray {
+.color_white {
   color: #d3d3d3;
 }
 
@@ -30,7 +30,7 @@ body {
   background-repeat: repeat-x;
 }
 
-main h2 {
+main .hello {
   padding: 36px 24px 0;
   font-size: 18px;
   font-weight: 500;
@@ -57,7 +57,7 @@ main .descr {
   background-image: url(images/bcg_blank.png);
 }
 
-main h3 {
+main .when {
   padding: 0 24px;
   font-size: 22px;
   font-weight: 800;
@@ -73,4 +73,24 @@ main .local {
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
-.material-icons.md-96 { font-size: 96px; }
+
+.material-symbols-outlined.md-96 { font-size: 96px; }
+.material-symbols-outlined.whitefff { color: #fff; }
+
+.main_program {
+  margin: 48px 0 12px;
+  background-color: #272a31;
+}
+
+.main_program h2 {
+  padding: 24px 0;
+}
+
+.main_program button {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  width: calc(100% - 96px);
+  max-width: 400px;
+  height: 64px;
+  border-style: none;
+}
