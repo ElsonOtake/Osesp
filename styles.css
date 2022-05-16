@@ -34,8 +34,12 @@ body {
   background-repeat: repeat-x;
 }
 
+body.about {
+  background-image: url(images/bcg_about.png);
+}
+
 main .hello {
-  padding: 36px 24px 0;
+  padding: 30px 24px 0;
   font-size: 18px;
   font-weight: 500;
 }
@@ -45,11 +49,26 @@ main h1 {
   font-size: 36px;
   font-weight: 900;
   color: #ec5242;
+}
+
+main.index h1 {
+  padding: 0 24px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ec5242;
   Background-image: url(images/bcg_red.jpeg);
   Background-size: cover;
   Background-clip: text;
   -webkit-background-clip: text;
   Color: transparent;
+}
+
+main.about {
+  text-align: center;
+}
+
+main.about .hello {
+  padding: 12px;
 }
 
 main .descr {
@@ -72,6 +91,15 @@ main .local {
   padding: 12px 18px;
 }
 
+main .email {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+main a {
+  font-size: 10px;
+  font-weight: 700;
+}
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
