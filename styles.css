@@ -275,3 +275,31 @@ main a {
   border: 1px solid #d3d3d3;
   padding: 0 24px;
 }
+
+.past {
+  background-color: #fff;
+  width: cacl(100% - 96px);
+  padding: 24px;
+}
+
+.past h2 {
+  padding: 36px 0 12px;
+}
+
+.past div {
+  width: 30px;
+  border-bottom: 1px solid #ec5242;
+  margin: auto;
+}
+
+.past p {
+  font-size: 12px;
+  padding: 12px 0 36px;
+  line-height: 18px;
+}
+
+.past img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+}
