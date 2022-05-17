@@ -68,7 +68,7 @@ main h1 {
   letter-spacing: 0.03em;
 }
 
-main.index h1 {
+body.index main h1 {
   background-image: url(images/bcg_red.jpeg);
   background-size: cover;
   background-clip: content-box;
@@ -76,24 +76,31 @@ main.index h1 {
   color: transparent;
 }
 
-main.about .hello {
+body.about main .hello {
   padding: 12px;
 }
 
-main .descr {
+main .descr,
+main .descr_mob,
+main .descr_dsk {
   font-family: Lato;
   margin: 24px 12px;
   padding: 16px;
   font-size: 12px;
   line-height: 24px;
-}
-
-main.index .descr {
   border: 2px solid white;
   background-image: url(images/bcg_blank.png);
 }
 
-main.about .descr {
+main .descr_mob {
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+}
+
+main .descr_dsk {
+  display: none;
+  width: 100%;
+  padding: 16px 64px;
   border: 1px solid #d3d3d3;
   background-color: #fff;
 }
@@ -271,6 +278,10 @@ main a {
   align-items: center;
 }
 
+.musicians article.desktop {
+  display: none;
+}
+
 .logo {
   background-color: #fff;
 }
@@ -291,6 +302,10 @@ main a {
   font-size: 12px;
   padding: 12px 48px 36px;
   line-height: 18px;
+}
+
+.logo .logo_dsk {
+  display: none;
 }
 
 .logo img {
@@ -319,6 +334,14 @@ main a {
   font-size: 12px;
   padding: 12px 0 36px;
   line-height: 18px;
+}
+
+.past .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .past img {
@@ -393,44 +416,80 @@ main a {
   height: auto;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: calc(100% - 48px);
-  height: 100px;
-  margin: 0 24px;
-  column-gap: 10%;
+body.index .partner {
+  display: none;
 }
 
-footer img {
+body.index footer,
+body.about footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 48px);
+  margin: 0 24px;
+  padding: 36px 0;
+  gap: 10%;
+}
+
+body.index footer img,
+body.about footer img {
   width: 30%;
   height: auto;
 }
 
-footer p {
+body.index footer p,
+body.about footer p {
   font-size: 10px;
 }
 
+body.index footer .logo_dsk,
+body.about footer .logo_dsk {
+  display: none;
+}
+
+body.index footer {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     padding: 0 15%;
-  }
+  } */
 
   header {
-    padding-top: 28px;
+    padding: 28px 15%;
+  }
+
+  main {
+    padding: 0 15% 64px;
   }
 
   main .hello {
     font-size: 40px;
   }
 
-  main.index h1 {
+  body.about main .hello {
+    display: none;
+  }
+
+  body.index main h1 {
     font-size: 72px;
+  }
+
+  body.about main h1 {
+    font-size: 56px;
   }
 
   main .descr {
     width: 50%;
+  }
+
+  main .descr_mob {
+    display: none;
+  }
+
+  main .descr_dsk {
+    display: block;
   }
 
   main .when {
@@ -441,9 +500,13 @@ footer p {
     font-size: 20px;
   }
 
-  .main_program {
-    padding: 0;
-    margin: 0;
+  body.about main .email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  body.about main a {
+    font-size: 16px;
   }
   
   .main_program h2 {
@@ -455,6 +518,7 @@ footer p {
   
   .main_program .activities {
     flex-direction: row;
+    padding: 0 15%;
   }
 
   .main_program .activities > li {
@@ -493,6 +557,7 @@ footer p {
 
   .musicians {
     margin: 36px 0;
+    padding: 0 15%;
   }
 
   .musicians .container {
@@ -506,23 +571,96 @@ footer p {
     width: 360px;
   }
 
+  .musicians article.desktop {
+    display: grid;
+  }
+  
   .musicians button {
     display: none;
   }
-  
-  footer {
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    margin: 0 48px;
-    column-gap: 20%;
+
+  .logo h2 {
+    font-size: 30px;
+  }
+
+  .logo .logo_mob {
+    display: none;
+  }
+
+  .logo .logo_dsk {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .past {
+    margin-bottom: 128px;
+  }
+
+  .past h2 {
+    font-size: 30px;
+  }
+
+  .past p {
+    font-size: 16px;
+  }
+
+  .past .container {
+    flex-direction: row;
+  }
+
+  .past .picture {
+    width: 30%;
+  }
+
+  body.index .partner {
+    display: block;
   }
   
-  footer img {
+  .partner ul {
+    padding: 0 15% 30px;
+  }
+
+  body.about .partner {
+    display: none;
+  }
+
+  body.index footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  body.index footer img {
+    padding-top: 64px;
     width: 25%;
   }
   
-  footer p {
+  body.index footer p {
+    padding-top: 64px;
     font-size: 14px;
+  }
+
+  body.about footer {
+    display: flex;
+    background-color: #272a31;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  body.about footer .logo_mob {
+    display: none;
+  }
+
+  body.about footer .logo_dsk {
+    display: flex;
+  }
+
+  body.about footer p {
+    color: #d3d3d3;
   }
 }
