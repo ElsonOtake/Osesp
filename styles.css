@@ -14,7 +14,7 @@ header {
   padding: 18px 24px;
 }
 
-.material-icons.mob_close {
+.material-icons-outlined.mob_close {
   display: none;
 }
 
@@ -33,12 +33,14 @@ header {
 body {
   background-image: url(images/bcg_main.png);
   background-repeat: repeat-x;
+
   /* background-size: cover; */
 }
 
 body.about {
   background-image: url(images/bcg_about.png);
   text-align: center;
+
   /* background-size: cover; */
 }
 
@@ -67,12 +69,11 @@ main.index h1 {
   padding: 0 24px;
   font-size: 36px;
   font-weight: 900;
-  color: #ec5242;
-  Background-image: url(images/bcg_red.jpeg);
-  Background-size: cover;
-  Background-clip: text;
+  background-image: url(images/bcg_red.jpeg);
+  background-size: cover;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  Color: transparent;
+  color: transparent;
 }
 
 main.about .hello {
@@ -111,12 +112,13 @@ main a {
   font-weight: 700;
   padding-bottom: 24px;
 }
+
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.red242 { color: #ec5242; }
+.material-icons-outlined.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24 { font-size: 24px; }
+.material-icons-outlined.md-36 { font-size: 36px; }
+.material-icons-outlined.md-48 { font-size: 48px; }
+.material-icons-outlined.red242 { color: #ec5242; }
 
 .material-symbols-outlined.md-48 { font-size: 48px; }
 .material-symbols-outlined.md-96 { font-size: 96px; }
@@ -124,8 +126,7 @@ main a {
 .material-symbols-outlined.grayd3 { color: #d3d3d3; }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'wght' 100
+  font-variation-settings: 'wght' 100;
 }
 
 .main_program {
@@ -200,7 +201,7 @@ main a {
 
 .musicians article {
   display: grid;
-  grid-template-columns: 30% calc(70% -12px);
+  grid-template-columns: 30% calc(70% - 12px);
   grid-template-areas: 'img name' 'img role' 'img line' 'img descr';
   column-gap: 12px;
   padding: 18px 0;
@@ -280,7 +281,7 @@ main a {
 }
 
 .past {
-  width: cacl(100% - 96px);
+  width: calc(100% - 96px);
   margin: 24px;
 }
 
@@ -309,7 +310,7 @@ main a {
   line-height: 0%;
 }
 
-.past .picture:before {
+.past .picture::before {
   content: "";
   position: absolute;
   top: 0;
@@ -389,3 +390,5 @@ footer p {
   font-size: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+}
