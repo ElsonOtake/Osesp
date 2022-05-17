@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Lato, Helvetica, sans-serif;
   color: #272a31;
+  box-sizing: border-box;
 }
 
 ul {
@@ -181,6 +182,7 @@ main a {
 
 .musicians {
   width: calc(100% - 48px);
+  margin-left: 24px;
 }
 
 .musicians h2 {
@@ -196,15 +198,15 @@ main a {
 
 .musicians article {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% calc(70% -12px);
   grid-template-areas: 'img name' 'img role' 'img line' 'img descr';
-  column-gap: 48px;
-  padding: 18px;
+  column-gap: 12px;
+  padding: 18px 0;
 }
 
 .musicians article img {
   grid-area: img;
-  width: 124px;
+  width: 100%;
   height: auto;
 }
 
@@ -241,7 +243,6 @@ main a {
 
 .musicians button {
   width: 100%;
-  margin: 0 24px;
   border: 1px solid #d3d3d3;
   border-radius: 2px;
   height: 40px;
@@ -277,9 +278,8 @@ main a {
 }
 
 .past {
-  background-color: #fff;
   width: cacl(100% - 96px);
-  padding: 24px;
+  margin: 24px;
 }
 
 .past h2 {
@@ -300,11 +300,13 @@ main a {
 
 .past img {
   width: 100%;
-  height: auto;
+  margin-bottom: 24px;
 }
 
 .past .picture {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .past .picture:before {
@@ -312,8 +314,8 @@ main a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  right: 0;
   background-color: rgba(236, 82, 66, 0.5);
 }
 
@@ -340,7 +342,9 @@ main a {
 }
 
 .partner h2 {
+  padding: 24px 0 0;
   color: #fff;
+  font-weight: 400;
 }
 
 .partner div {
@@ -349,17 +353,24 @@ main a {
   margin: 18px auto;
 }
 
+.partner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
 .partner img {
   width: 100px;
   height: auto;
-  padding: 10px;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: calc(90% - 48px);
+  width: calc(100% - 48px);
   height: 100px;
   margin: 0 24px;
   column-gap: 10%;
