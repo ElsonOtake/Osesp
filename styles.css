@@ -33,11 +33,13 @@ header {
 body {
   background-image: url(images/bcg_main.png);
   background-repeat: repeat-x;
+  /* background-size: cover; */
 }
 
 body.about {
   background-image: url(images/bcg_about.png);
   text-align: center;
+  /* background-size: cover; */
 }
 
 body.about header {
@@ -300,13 +302,11 @@ main a {
 
 .past img {
   width: 100%;
-  margin-bottom: 24px;
 }
 
 .past .picture {
   position: relative;
-  margin: 0;
-  padding: 0;
+  line-height: 0%;
 }
 
 .past .picture:before {
@@ -335,6 +335,10 @@ main a {
   transform: translate(-50%, -50%);
   font-size: 12px;
   color: #fff;
+}
+
+.past .space {
+  height: 24px;
 }
 
 .partner {
@@ -384,3 +388,4 @@ footer img {
 footer p {
   font-size: 10px;
 }
+
