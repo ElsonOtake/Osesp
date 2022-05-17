@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  /* font-family: Cocogoose, Arial, Helvetica, sans-serif;; */
   color: #272a31;
   box-sizing: border-box;
 }
@@ -53,22 +54,21 @@ main {
 }
 
 main .hello {
-  padding: 30px 24px 0;
-  font-size: 18px;
-  font-weight: 500;
+  padding: 30px 24px 6px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 main h1 {
   padding: 0 24px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
   color: #ec5242;
+  letter-spacing: 0.03em;
 }
 
 main.index h1 {
-  padding: 0 24px;
-  font-size: 36px;
-  font-weight: 900;
   background-image: url(images/bcg_red.jpeg);
   background-size: cover;
   background-clip: content-box;
@@ -81,12 +81,21 @@ main.about .hello {
 }
 
 main .descr {
+  font-family: Lato;
   margin: 24px 12px;
   padding: 16px;
   font-size: 12px;
   line-height: 24px;
+}
+
+main.index .descr {
   border: 2px solid white;
   background-image: url(images/bcg_blank.png);
+}
+
+main.about .descr {
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
 }
 
 main .when {
@@ -97,7 +106,7 @@ main .when {
 
 main .local {
   font-size: 14px;
-  padding: 12px 18px;
+  padding: 12px 18px 40px;
 }
 
 main .email {
@@ -130,7 +139,6 @@ main a {
 }
 
 .main_program {
-  margin: 48px 0 12px;
   background-image: url(images/bcg_progr.png);
 }
 
@@ -146,14 +154,17 @@ main a {
   text-align: center;
 }
 
-.main_program div {
+.main_program div div {
   width: 30px;
-  border-bottom: 1px solid #ec5242;
-  margin: 0 auto 36px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 0 auto 30px;
 }
 
-.main_program ul {
+.main_program .activities {
   width: calc(100% - 24px);
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_program ul li ul {
@@ -162,8 +173,8 @@ main a {
   align-items: center;
   column-gap: 12px;
   padding: 12px;
-  background-color: rgba(75, 75, 75, 0.5);
-  margin: 12px;
+  background-color: rgba(100, 100, 100, 0.5);
+  margin: 6px 12px;
 }
 
 .main_program ul .progr {
@@ -183,6 +194,10 @@ main a {
   margin: 48px;
 }
 
+.main_program a {
+  display: none;
+}
+
 .musicians {
   width: calc(100% - 48px);
   margin-left: 24px;
@@ -190,21 +205,22 @@ main a {
 
 .musicians h2 {
   text-align: center;
-  padding: 18px;
+  padding: 18px 0 0;
+  font-weight: 400;
 }
 
-.musicians div {
+.musicians .sep {
   width: 30px;
-  border-bottom: 1px solid #ec5242;
-  margin: 18px auto;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 12px auto;
 }
 
 .musicians article {
   display: grid;
-  grid-template-columns: 30% calc(70% - 12px);
+  grid-template-columns: 30% calc(70% - 16px);
   grid-template-areas: 'img name' 'img role' 'img line' 'img descr';
-  column-gap: 12px;
-  padding: 18px 0;
+  column-gap: 16px;
+  padding: 24px 0;
 }
 
 .musicians article img {
@@ -215,25 +231,25 @@ main a {
 
 .musicians article h3 {
   grid-area: name;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
-  font-family: Cocogoose, Helvetica, sans-serif;
+  font-family: Cocogoose, Arial, Helvetica, sans-serif;
 }
 
 .musicians article .role {
   grid-area: role;
   color: #ec5242;
   font-style: italic;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 8px 0;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 6px;
 }
 
 .musicians article div {
   grid-area: line;
   width: 15px;
   margin: 0;
-  padding: 0;
+  padding-top: 6px;
   border-bottom: 2px solid #d3d3d3;
 }
 
@@ -241,7 +257,7 @@ main a {
   grid-area: descr;
   font-size: 10px;
   line-height: 15px;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .musicians button {
@@ -260,18 +276,20 @@ main a {
 }
 
 .logo h2 {
+  font-size: 20px;
+  font-weight: 500;
   padding: 36px 0 12px;
 }
 
 .logo div {
   width: 30px;
-  border-bottom: 1px solid #ec5242;
+  border-bottom: 1.5px solid #ec5242;
   margin: auto;
 }
 
 .logo p {
   font-size: 12px;
-  padding: 12px 0 36px;
+  padding: 12px 48px 36px;
   line-height: 18px;
 }
 
@@ -281,17 +299,19 @@ main a {
 }
 
 .past {
-  width: calc(100% - 96px);
-  margin: 24px;
+  width: calc(100% - 72px);
+  margin: 36px;
 }
 
 .past h2 {
+  font-size: 20px;
+  font-weight: 400;
   padding: 36px 0 12px;
 }
 
 .past .sep {
   width: 30px;
-  border-bottom: 1px solid #ec5242;
+  border-bottom: 1.5px solid #ec5242;
   margin: auto;
 }
 
@@ -344,17 +364,19 @@ main a {
 
 .partner {
   background-color: #272a31;
+  text-align: center;
 }
 
 .partner h2 {
   padding: 24px 0 0;
   color: #fff;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .partner div {
   width: 30px;
-  border-bottom: 1px solid #ec5242;
+  border-bottom: 1.5px solid #ec5242;
   margin: 18px auto;
 }
 
@@ -391,4 +413,116 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding: 0 15%;
+  }
+
+  header {
+    padding-top: 28px;
+  }
+
+  main .hello {
+    font-size: 40px;
+  }
+
+  main.index h1 {
+    font-size: 72px;
+  }
+
+  main .descr {
+    width: 50%;
+  }
+
+  main .when {
+    font-size: 32px;
+  }
+
+  main .local {
+    font-size: 20px;
+  }
+
+  .main_program {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main_program h2 {
+    padding: 24px 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .main_program .activities {
+    flex-direction: row;
+  }
+
+  .main_program .activities > li {
+    display: flex;
+    flex: 1 1 0;
+  }
+
+  .main_program ul li ul {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 12px;
+    margin: 12px 4px;
+    row-gap: 12px;
+  }
+
+  .main_program ul .progr {
+    font-weight: 600;
+  }
+  
+  .main_program ul .activ {
+    font-size: 12px;
+  }
+  
+  .main_program button {
+    display: none;
+  }
+
+  .main_program a {
+    display: flex;
+    justify-content: center;
+    color: #d3d3d3;
+    font-size: 16px;
+    padding: 56px 0;
+  }
+
+  .musicians {
+    margin: 36px 0;
+  }
+
+  .musicians .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .musicians .container article {
+    width: 360px;
+  }
+
+  .musicians button {
+    display: none;
+  }
+  
+  footer {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 0 48px;
+    column-gap: 20%;
+  }
+  
+  footer img {
+    width: 25%;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
 }
