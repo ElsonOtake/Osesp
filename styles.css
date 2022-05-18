@@ -849,21 +849,23 @@ body.index footer {
   }
 
   body.index footer img {
-    padding-top: 64px;
-    width: 25%;
+    padding-top: 36px;
+    width: 15%;
   }
 
   body.index footer p {
-    padding-top: 64px;
+    padding-top: 36px;
     font-size: 14px;
   }
 
   body.about footer {
     display: flex;
+    width: 100%;
     background-color: #272a31;
     justify-content: center;
     align-items: center;
     gap: 5%;
+    margin: 0;
   }
 
   body.about footer .logo_mob {
@@ -872,6 +874,7 @@ body.index footer {
 
   body.about footer .logo_dsk {
     display: flex;
+    width: 15%;
   }
 
   body.about footer p {
