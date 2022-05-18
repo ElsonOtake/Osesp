@@ -13,6 +13,8 @@
 
 ## Live Demo
 
+[Loom presentation video](https://www.loom.com/share/ac982d4c6d50418891805855f75e11f0)
+
 [Live Demo Link](https://elsonotake.github.io/Osesp/)
 
 
