@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: #272a31;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main a {
+  font-size: 10px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+a:hover {
+  color: red;
+}
+
+body.noscroll {
+  overflow-y: hidden;
+}
+
+header .header_a {
+  display: none;
+}
+
+.activities a {
+  display: none;
+}
+
+.logo img {
+  border: 1px solid #d3d3d3;
+  padding: 24px;
+  width: 60%;
+}
+
+.past img {
+  width: 100%;
+}
+
+.partner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+.partner img {
+  width: 100px;
+  height: auto;
+}
+
+header .header_b > a,
+header .header_b ul,
+header .header_b img {
+  display: none;
+}
+
+header .header_b .mob_menu,
+header .header_b .mob_close,
+body.about header .header_b .osesp,
+header .header_b .menu_link {
+  cursor: pointer;
+}
+
+header .header_b.active .mob_menu {
+  display: none;
+}
+
+.activities ul li ul {
+  display: grid;
+  grid-template-columns: 15% 25% calc(60% - 24px);
+  align-items: center;
+  column-gap: 12px;
+  padding: 12px;
+  background-color: rgba(100, 100, 100, 0.5);
+  margin: 6px 12px;
+}
+
+header .header_b.active ul {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: calc(100% - 80px);
+}
+
+header .header_b.active ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #d3d3d3;
+  width: fit-content;
+  font-size: 20px;
+}
+
+header .header_b.active ul li a {
+  color: #d3d3d3;
+  font-size: 20px;
+}
+
+header .header_b.active {
+  position: sticky;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ec5242;
+  z-index: 1000;
+}
+
+header .header_b.active .mob_close {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-left: 75%;
+  padding: 24px 0 0;
+}
+
+header .header_a,
+header .header_b {
+  padding: 0 24px;
+}
+
+header .header_b.active .menu_dsk {
+  display: none;
+}
+
+.material-icons-outlined.mob_close {
+  display: none;
+}
+
+.color_red {
+  color: #ec5242;
+}
+
+.color_white {
+  color: #fff;
+}
+
+.color_gray {
+  color: #d3d3d3;
+}
+
+body {
+  background-image: url(images/bcg_main.png);
+  background-repeat: repeat-x;
+}
+
+body.about {
+  background-image: url(images/bcg_about.png);
+  text-align: center;
+}
+
+body.about header {
+  text-align: left;
+}
+
+main {
+  padding-bottom: 36px;
+}
+
+main .hello {
+  padding: 30px 24px 6px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+main h1 {
+  padding: 0 24px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #ec5242;
+  letter-spacing: 0.03em;
+}
+
+body.index main h1 {
+  background-image: url(images/bcg_red.jpeg);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body.about main .hello {
+  padding: 12px;
+}
+
+main .descr,
+main .descr_mob,
+main .descr_dsk {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  margin: 24px 12px;
+  padding: 16px;
+  font-size: 12px;
+  line-height: 24px;
+  border: 2px solid white;
+  background-image: url(images/bcg_blank.png);
+}
+
+main .descr_mob {
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+}
+
+main .descr_dsk {
+  display: none;
+  width: 100%;
+  padding: 16px 64px;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+}
+
+main .when {
+  padding: 0 24px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+main .local {
+  font-size: 14px;
+  padding: 12px 18px 40px;
+}
+
+main .email {
+  font-size: 10px;
+  line-height: 15px;
+  width: 66%;
+  margin: 0 17%;
+}
+
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+.material-icons-outlined.red242 {
+  color: #ec5242;
+}
+
+.material-symbols-outlined.md-48 {
+  font-size: 48px;
+}
+
+.material-symbols-outlined.whitefff {
+  color: #fff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'wght' 100;
+}
+
+.fa-brands {
+  color: #fff;
+}
+
+.activities {
+  background-image: url(images/bcg_progr.png);
+}
+
+.activities .bcg_dark {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.activities h2 {
+  padding: 24px 0 12px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.logo div {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: auto;
+}
+
+.partner div {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 18px auto;
+}
+
+.activities div div {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 0 auto 30px;
+}
+
+.activities .container {
+  width: calc(100% - 24px);
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 350px) {
+  .activities ul li ul {
+    grid-template-columns: calc(100% - 24px);
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.activities ul .progr {
+  font-weight: 600;
+}
+
+.activities ul .activ {
+  font-size: 12px;
+}
+
+.activities button {
+  background-color: #ec5242;
+  color: #fff;
+  width: calc(100% - 96px);
+  height: 64px;
+  border-style: none;
+  margin: 48px;
+}
+
+.musicians {
+  width: calc(100% - 48px);
+  margin-left: 24px;
+}
+
+.musicians h2 {
+  text-align: center;
+  padding: 18px 0 0;
+  font-weight: 400;
+}
+
+.musicians .sep {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 12px auto;
+}
+
+.musicians article {
+  display: grid;
+  grid-template-columns: 30% calc(70% - 16px);
+  grid-template-areas: 'img name' 'img role' 'img line' 'img descr';
+  column-gap: 16px;
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 240px) {
+  .musicians article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: calc(100% - 16px);
+    grid-template-areas: 'img' 'name' 'role' 'line' 'descr';
+    row-gap: 10px;
+    padding: 8px 0;
+  }
+}
+
+.musicians article img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+.musicians article h3 {
+  grid-area: name;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Cocogoose, Arial, Helvetica, sans-serif;
+}
+
+.musicians article .role {
+  grid-area: role;
+  color: #ec5242;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 6px;
+}
+
+.musicians article div {
+  grid-area: line;
+  width: 15px;
+  margin: 0;
+  padding-top: 6px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.musicians article .description {
+  grid-area: descr;
+  font-size: 10px;
+  line-height: 15px;
+  padding-top: 6px;
+}
+
+.musicians button {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicians article.desktop {
+  display: none;
+}
+
+.logo {
+  background-color: #fff;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 36px 0 12px;
+}
+
+.logo p {
+  font-size: 12px;
+  padding: 12px 48px 36px;
+  line-height: 18px;
+}
+
+.logo .logo_dsk {
+  display: none;
+}
+
+.past {
+  width: calc(100% - 72px);
+  margin: 36px;
+}
+
+.past h2 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 36px 0 12px;
+}
+
+.past .sep {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: auto;
+}
+
+.past p {
+  font-size: 12px;
+  padding: 12px 0 36px;
+  line-height: 18px;
+}
+
+.past .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.past .picture {
+  position: relative;
+
+  /* Added to remove extra space at the bottom of container */
+  line-height: 0%;
+}
+
+.past .picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(236, 82, 66, 0.5);
+}
+
+.past .centered_1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+}
+
+.past .centered_2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #fff;
+}
+
+@media screen and (max-width: 220px) {
+  .past .centered_1 {
+    display: none;
+  }
+
+  .past .centered_2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .past .centered_1 {
+    font-size: 12px;
+  }
+
+  .past .centered_2 {
+    font-size: 6px;
+  }
+}
+
+.past .space {
+  height: 24px;
+}
+
+.partner {
+  background-color: #272a31;
+  text-align: center;
+}
+
+.partner h2 {
+  padding: 24px 0 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+body.index .partner {
+  display: none;
+}
+
+body.index footer,
+body.about footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 48px);
+  margin: 0 24px;
+  padding: 36px 0;
+  gap: 10%;
+}
+
+body.index footer img,
+body.about footer img {
+  width: 30%;
+  height: auto;
+}
+
+body.index footer p,
+body.about footer p {
+  font-size: 10px;
+}
+
+body.index footer .logo_dsk,
+body.about footer .logo_dsk {
+  display: none;
+}
+
+body.index footer {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  header {
+    padding: 0;
+    margin: 0;
+  }
+
+  header .header_b .mob_menu {
+    display: none;
+  }
+
+  body.about header .header_b a[href*="partner"] {
+    pointer-events: none;
+  }
+
+  header .header_a {
+    display: block;
+    width: 100%;
+    background-color: #272a31;
+    padding: 6px 15%;
+  }
+
+  main ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .partner ul {
+    padding: 0 15% 30px;
+  }
+
+  header .header_a ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  header .header_a ul li {
+    color: #fff;
+  }
+
+  header .header_b {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15%;
+    background-color: #fff;
+  }
+
+  .activities a {
+    display: flex;
+    justify-content: center;
+    color: #d3d3d3;
+    font-size: 16px;
+    padding: 56px 0;
+    text-decoration: underline;
+  }
+
+  header .header_b a {
+    display: flex;
+  }
+
+  header .header_b ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .activities .container > li {
+    display: flex;
+    flex: 1 1 0;
+  }
+
+  header .header_b ul li:last-child {
+    border: 4px solid #ec5242;
+    padding: 4px;
+    color: #ec5242;
+  }
+
+  header .header_b img {
+    display: flex;
+    width: 60px;
+    height: auto;
+  }
+
+  header .header_b .menu_dsk {
+    display: flex;
+  }
+
+  header .header_b .menu_mob {
+    display: none;
+  }
+
+  main {
+    padding: 64px 15% 64px;
+    background-image: url(images/bcg_main.png);
+    background-repeat: repeat-x;
+  }
+
+  main .hello {
+    font-size: 40px;
+  }
+
+  body.about main .hello {
+    display: none;
+  }
+
+  body.index main h1 {
+    font-size: 72px;
+  }
+
+  body.about main h1 {
+    font-size: 56px;
+  }
+
+  main .descr {
+    width: 50%;
+  }
+
+  main .descr_mob {
+    display: none;
+  }
+
+  main .descr_dsk {
+    display: block;
+  }
+
+  main .when {
+    font-size: 32px;
+  }
+
+  main .local {
+    font-size: 20px;
+  }
+
+  body.about main .email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  body.about main a {
+    font-size: 16px;
+  }
+
+  .activities h2 {
+    padding: 24px 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .activities .container {
+    flex-direction: row;
+    padding: 0 15%;
+  }
+
+  .activities ul li ul {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 12px;
+    margin: 12px 4px;
+    row-gap: 12px;
+  }
+
+  .activities ul .progr {
+    font-weight: 600;
+  }
+
+  .activities ul .activ {
+    font-size: 12px;
+  }
+
+  .activities button {
+    display: none;
+  }
+
+  .musicians {
+    margin: 36px 0;
+    padding: 0 15%;
+  }
+
+  .musicians .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .musicians .container article {
+    width: 360px;
+  }
+
+  .musicians article.desktop {
+    display: grid;
+  }
+
+  .musicians button {
+    display: none;
+  }
+
+  .logo h2 {
+    font-size: 30px;
+  }
+
+  .logo .logo_mob {
+    display: none;
+  }
+
+  .logo .logo_dsk {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .past {
+    margin-bottom: 128px;
+  }
+
+  .past h2 {
+    font-size: 30px;
+  }
+
+  .past p {
+    font-size: 16px;
+  }
+
+  .past .container {
+    flex-direction: row;
+  }
+
+  .past .picture {
+    width: 30%;
+  }
+
+  .past .centered_1 {
+    font-size: 12px;
+  }
+
+  .past .centered_2 {
+    font-size: 6px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .past .centered_1 {
+      font-size: 24px;
+    }
+
+    .past .centered_2 {
+      font-size: 12px;
+    }
+  }
+
+  body.index .partner {
+    display: block;
+  }
+
+  body.about .partner {
+    display: none;
+  }
+
+  body.index footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  body.index footer img {
+    padding-top: 36px;
+    width: 15%;
+  }
+
+  body.index footer p {
+    padding-top: 36px;
+    font-size: 14px;
+  }
+
+  body.about footer {
+    display: flex;
+    width: 100%;
+    background-color: #272a31;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 0;
+  }
+
+  body.about footer .logo_mob {
+    display: none;
+  }
+
+  body.about footer .logo_dsk {
+    display: flex;
+    width: 15%;
+  }
+
+  body.about footer p {
+    color: #d3d3d3;
+  }
+}
