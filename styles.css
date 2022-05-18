@@ -10,12 +10,18 @@ ul {
   list-style-type: none;
 }
 
-a:hover {
-  color: red;
-}
-
 a {
   text-decoration: none;
+}
+
+main a {
+  font-size: 10px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+a:hover {
+  color: red;
 }
 
 body.noscroll {
@@ -24,6 +30,33 @@ body.noscroll {
 
 header .header_a {
   display: none;
+}
+
+.activities a {
+  display: none;
+}
+
+.logo img {
+  border: 1px solid #d3d3d3;
+  padding: 24px;
+  width: 60%;
+}
+
+.past img {
+  width: 100%;
+}
+
+.partner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+.partner img {
+  width: 100px;
+  height: auto;
 }
 
 header .header_b > a,
@@ -41,6 +74,16 @@ header .header_b .menu_link {
 
 header .header_b.active .mob_menu {
   display: none;
+}
+
+.activities ul li ul {
+  display: grid;
+  grid-template-columns: 15% 25% calc(60% - 24px);
+  align-items: center;
+  column-gap: 12px;
+  padding: 12px;
+  background-color: rgba(100, 100, 100, 0.5);
+  margin: 6px 12px;
 }
 
 header .header_b.active ul {
@@ -191,23 +234,21 @@ main .email {
   margin: 0 17%;
 }
 
-main a {
-  font-size: 10px;
-  font-weight: 700;
-  padding-bottom: 24px;
+.material-icons-outlined.md-48 {
+  font-size: 48px;
 }
 
-/* Rules for sizing the icon. */
-.material-icons-outlined.md-18 { font-size: 18px; }
-.material-icons-outlined.md-24 { font-size: 24px; }
-.material-icons-outlined.md-36 { font-size: 36px; }
-.material-icons-outlined.md-48 { font-size: 48px; }
-.material-icons-outlined.red242 { color: #ec5242; }
+.material-icons-outlined.red242 {
+  color: #ec5242;
+}
 
-.material-symbols-outlined.md-48 { font-size: 48px; }
-.material-symbols-outlined.md-96 { font-size: 96px; }
-.material-symbols-outlined.whitefff { color: #fff; }
-.material-symbols-outlined.grayd3 { color: #d3d3d3; }
+.material-symbols-outlined.md-48 {
+  font-size: 48px;
+}
+
+.material-symbols-outlined.whitefff {
+  color: #fff;
+}
 
 .material-symbols-outlined {
   font-variation-settings: 'wght' 100;
@@ -217,64 +258,70 @@ main a {
   color: #fff;
 }
 
-.main_program {
+.activities {
   background-image: url(images/bcg_progr.png);
 }
 
-.main_program .bcg_dark {
+.activities .bcg_dark {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.main_program h2 {
+.activities h2 {
   padding: 24px 0 12px;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
 
-.main_program div div {
+.logo div {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: auto;
+}
+
+.partner div {
+  width: 30px;
+  border-bottom: 1.5px solid #ec5242;
+  margin: 18px auto;
+}
+
+.activities div div {
   width: 30px;
   border-bottom: 1.5px solid #ec5242;
   margin: 0 auto 30px;
 }
 
-.main_program .activities {
+.activities .container {
   width: calc(100% - 24px);
   margin: 0 12px;
   display: flex;
   flex-direction: column;
 }
 
-.main_program ul li ul {
-  display: grid;
-  grid-template-columns: 15% 25% calc(60% - 24px);
-  align-items: center;
-  column-gap: 12px;
-  padding: 12px;
-  background-color: rgba(100, 100, 100, 0.5);
-  margin: 6px 12px;
+@media screen and (max-width: 350px) {
+  .activities ul li ul {
+    grid-template-columns: calc(100% - 24px);
+    justify-content: center;
+    text-align: center;
+  }
 }
 
-.main_program ul .progr {
+.activities ul .progr {
   font-weight: 600;
 }
 
-.main_program ul .activ {
+.activities ul .activ {
   font-size: 12px;
 }
 
-.main_program button {
+.activities button {
   background-color: #ec5242;
   color: #fff;
   width: calc(100% - 96px);
   height: 64px;
   border-style: none;
   margin: 48px;
-}
-
-.main_program a {
-  display: none;
 }
 
 .musicians {
@@ -364,12 +411,6 @@ main a {
   padding: 36px 0 12px;
 }
 
-.logo div {
-  width: 30px;
-  border-bottom: 1.5px solid #ec5242;
-  margin: auto;
-}
-
 .logo p {
   font-size: 12px;
   padding: 12px 48px 36px;
@@ -378,12 +419,6 @@ main a {
 
 .logo .logo_dsk {
   display: none;
-}
-
-.logo img {
-  border: 1px solid #d3d3d3;
-  padding: 24px;
-  width: 60%;
 }
 
 .past {
@@ -415,10 +450,6 @@ main a {
   align-items: center;
   justify-content: center;
   gap: 24px;
-}
-
-.past img {
-  width: 100%;
 }
 
 .past .picture {
@@ -456,6 +487,26 @@ main a {
   color: #fff;
 }
 
+@media screen and (max-width: 220px) {
+  .past .centered_1 {
+    display: none;
+  }
+
+  .past .centered_2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .past .centered_1 {
+    font-size: 12px;
+  }
+
+  .past .centered_2 {
+    font-size: 6px;
+  }
+}
+
 .past .space {
   height: 24px;
 }
@@ -470,25 +521,6 @@ main a {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-}
-
-.partner div {
-  width: 30px;
-  border-bottom: 1.5px solid #ec5242;
-  margin: 18px auto;
-}
-
-.partner ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 36px;
-}
-
-.partner img {
-  width: 100px;
-  height: auto;
 }
 
 body.index .partner {
@@ -547,6 +579,15 @@ body.index footer {
     padding: 6px 15%;
   }
 
+  main ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .partner ul {
+    padding: 0 15% 30px;
+  }
+
   header .header_a ul {
     display: flex;
     justify-content: flex-end;
@@ -564,12 +605,28 @@ body.index footer {
     background-color: #fff;
   }
 
+  .activities a {
+    display: flex;
+    justify-content: center;
+    color: #d3d3d3;
+    font-size: 16px;
+    padding: 56px 0;
+  }
+
+  header .header_b a {
+    display: flex;
+  }
+
   header .header_b ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 36px;
-    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .activities .container > li {
+    display: flex;
+    flex: 1 1 0;
   }
 
   header .header_b ul li:last-child {
@@ -578,7 +635,7 @@ body.index footer {
     color: #ec5242;
   }
 
-  header .header_b .osesp {
+  header .header_b img {
     display: flex;
     width: 60px;
     height: auto;
@@ -588,11 +645,6 @@ body.index footer {
     padding: 64px 15% 64px;
     background-image: url(images/bcg_main.png);
     background-repeat: repeat-x;
-  }
-
-  main ul {
-    display: flex;
-    justify-content: flex-end;
   }
 
   main .hello {
@@ -640,24 +692,19 @@ body.index footer {
     font-size: 16px;
   }
 
-  .main_program h2 {
+  .activities h2 {
     padding: 24px 0 12px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
 
-  .main_program .activities {
+  .activities .container {
     flex-direction: row;
     padding: 0 15%;
   }
 
-  .main_program .activities > li {
-    display: flex;
-    flex: 1 1 0;
-  }
-
-  .main_program ul li ul {
+  .activities ul li ul {
     display: grid;
     grid-template-columns: 100%;
     text-align: center;
@@ -666,24 +713,16 @@ body.index footer {
     row-gap: 12px;
   }
 
-  .main_program ul .progr {
+  .activities ul .progr {
     font-weight: 600;
   }
 
-  .main_program ul .activ {
+  .activities ul .activ {
     font-size: 12px;
   }
 
-  .main_program button {
+  .activities button {
     display: none;
-  }
-
-  .main_program a {
-    display: flex;
-    justify-content: center;
-    color: #d3d3d3;
-    font-size: 16px;
-    padding: 56px 0;
   }
 
   .musicians {
@@ -746,12 +785,26 @@ body.index footer {
     width: 30%;
   }
 
-  body.index .partner {
-    display: block;
+  .past .centered_1 {
+    font-size: 12px;
   }
 
-  .partner ul {
-    padding: 0 15% 30px;
+  .past .centered_2 {
+    font-size: 6px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .past .centered_1 {
+      font-size: 24px;
+    }
+
+    .past .centered_2 {
+      font-size: 12px;
+    }
+  }
+
+  body.index .partner {
+    display: block;
   }
 
   body.about .partner {
