@@ -513,6 +513,12 @@ body.index footer {
     flex-wrap: nowrap;
   }
 
+  header .header_b ul li:last-child {
+    border: 4px solid #ec5242;
+    padding: 4px;
+    color: #ec5242;
+  }
+
   header .header_b .osesp {
     display: flex;
     width: 60px;
