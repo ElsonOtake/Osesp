@@ -4,7 +4,6 @@
   font-family: Lato, Arial, Helvetica, sans-serif;
   color: #272a31;
   box-sizing: border-box;
-  border: 1px solid white;
 }
 
 ul {
@@ -125,8 +124,7 @@ header .header_b.active .mob_close {
   justify-content: flex-end;
   align-self: flex-end;
   margin-left: 75%;
-  margin-top: 24px;
-  padding: 0;
+  padding: 24px 0 0;
 }
 
 header .header_a,
