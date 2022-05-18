@@ -349,6 +349,17 @@ main .email {
   padding: 24px 0;
 }
 
+@media screen and (max-width: 240px) {
+  .musicians article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: calc(100% - 16px);
+    grid-template-areas: 'img' 'name' 'role' 'line' 'descr';
+    row-gap: 10px;
+    padding: 8px 0;
+  }
+}
+
 .musicians article img {
   grid-area: img;
   width: 100%;
