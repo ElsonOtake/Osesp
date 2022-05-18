@@ -664,7 +664,7 @@ body.index footer {
   }
 
   header .header_b .menu_dsk {
-    display: block;
+    display: flex;
   }
 
   header .header_b .menu_mob {
