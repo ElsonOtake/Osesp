@@ -22,17 +22,21 @@ body.noscroll {
   overflow-y: hidden;
 }
 
-/* header {
-  padding: 18px 24px;
-} */
-
 header .header_a {
   display: none;
 }
 
 header .header_b > a,
-header .header_b ul {
+header .header_b ul,
+header .header_b img {
   display: none;
+}
+
+header .header_b .mob_menu,
+header .header_b .mob_close,
+body.about header .header_b .osesp,
+header .header_b .menu_link {
+  cursor: pointer;
 }
 
 header .header_b.active .mob_menu {
@@ -102,15 +106,11 @@ header .header_b {
 body {
   background-image: url(images/bcg_main.png);
   background-repeat: repeat-x;
-
-  /* background-size: cover; */
 }
 
 body.about {
   background-image: url(images/bcg_about.png);
   text-align: center;
-
-  /* background-size: cover; */
 }
 
 body.about header {
@@ -151,7 +151,7 @@ body.about main .hello {
 main .descr,
 main .descr_mob,
 main .descr_dsk {
-  font-family: Lato;
+  font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 24px 12px;
   padding: 16px;
   font-size: 12px;
@@ -423,6 +423,8 @@ main a {
 
 .past .picture {
   position: relative;
+
+  /* Added to remove extra space at the bottom of container */
   line-height: 0%;
 }
 
@@ -592,6 +594,7 @@ body.index footer {
     display: flex;
     justify-content: flex-end;
   }
+
   main .hello {
     font-size: 40px;
   }
@@ -636,14 +639,14 @@ body.index footer {
   body.about main a {
     font-size: 16px;
   }
-  
+
   .main_program h2 {
     padding: 24px 0 12px;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
   }
-  
+
   .main_program .activities {
     flex-direction: row;
     padding: 0 15%;
@@ -666,11 +669,11 @@ body.index footer {
   .main_program ul .progr {
     font-weight: 600;
   }
-  
+
   .main_program ul .activ {
     font-size: 12px;
   }
-  
+
   .main_program button {
     display: none;
   }
@@ -702,7 +705,7 @@ body.index footer {
   .musicians article.desktop {
     display: grid;
   }
-  
+
   .musicians button {
     display: none;
   }
@@ -746,7 +749,7 @@ body.index footer {
   body.index .partner {
     display: block;
   }
-  
+
   .partner ul {
     padding: 0 15% 30px;
   }
@@ -761,12 +764,12 @@ body.index footer {
     align-items: center;
     gap: 5%;
   }
-  
+
   body.index footer img {
     padding-top: 64px;
     width: 25%;
   }
-  
+
   body.index footer p {
     padding-top: 64px;
     font-size: 14px;
