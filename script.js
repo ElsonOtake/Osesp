@@ -64,3 +64,75 @@ const musicians = [{
   + "great masters of this instrument such as Claudio Cruz, Dmitry Sitkovetsky and Chaim Taub in Tel Aviv",
   photo: "images/soraya_landim.png"
 }];
+
+//
+// Project sections created when page loads, below the section with activities id
+//
+
+const activities = document.getElementById("activities");
+
+const section = document.createElement("section");
+section.className = "musicians";
+section.id = "musicians";
+
+const h2 = document.createElement("h2");
+h2.innerText = "Musicians";
+section.appendChild(h2);
+
+const sep = document.createElement("div");
+sep.className = "sep";
+section.appendChild(sep);
+
+const container = document.createElement("div");
+container.className = "container";
+
+console.log("passing by");
+
+for (let i = 0; i < musicians.length; i += 1) {
+  const article = document.createElement("article");
+  
+  if (i > 1) {
+    article.className = "desktop";
+  }
+
+  const img = document.createElement("img");
+  img.src = musicians[i].photo;
+  img.alt = musicians[i].name;
+  article.appendChild(img);
+
+  const h3 = document.createElement("h3");
+  h3.innerText = musicians[i].name;
+  article.appendChild(h3);
+
+  const role = document.createElement("p");
+  role.className = "role";
+  role.innerText = musicians[i].role;
+  article.appendChild(role);
+
+  const div = document.createElement("div");
+  article.appendChild(div);
+
+  const description = document.createElement("p");
+  description.className = "description";
+  description.innerText = musicians[i].description;
+  article.appendChild(description);
+
+  container.appendChild(article);
+}
+
+section.appendChild(container);
+
+const button = document.createElement("button");
+button.type = "button";
+
+const more = document.createElement("span");
+more.innerText = "MORE";
+button.appendChild(more);
+
+const expand = document.createElement("span");
+expand.className = "material-icons-outlined md-24 red242";
+expand.innerText = "expand_more";
+button.appendChild(expand);
+
+section.appendChild(button);
+activities.insertAdjacentElement("afterend", section);
