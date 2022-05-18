@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Lato, Arial, Helvetica, sans-serif;
-  /* font-family: Cocogoose, Arial, Helvetica, sans-serif;; */
   color: #272a31;
   box-sizing: border-box;
 }
@@ -11,8 +10,20 @@ ul {
   list-style-type: none;
 }
 
+a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   padding: 18px 24px;
+}
+
+header .header_a {
+  display: none;
 }
 
 .material-icons-outlined.mob_close {
@@ -143,6 +154,10 @@ main a {
 
 .material-symbols-outlined {
   font-variation-settings: 'wght' 100;
+}
+
+.fa-brands {
+  color: #fff;
 }
 
 .main_program {
@@ -310,7 +325,8 @@ main a {
 
 .logo img {
   border: 1px solid #d3d3d3;
-  padding: 0 24px;
+  padding: 24px;
+  width: 60%;
 }
 
 .past {
@@ -452,18 +468,67 @@ body.index footer {
 }
 
 @media only screen and (min-width: 768px) {
-  /* body {
-    padding: 0 15%;
-  } */
+  body {
+    background-image: none;
+  }
 
   header {
-    padding: 28px 15%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header .header_b .mob_menu {
+    display: none;
+  }
+
+  header .header_a {
+    display: block;
+    width: 100%;
+    background-color: #272a31;
+    padding: 6px 15%;
+  }
+
+  header .header_a ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  header .header_a ul li {
+    color: #fff;
+  }
+
+  header .header_b {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15%;
+    background-color: #fff;
+  }
+
+  header .header_b ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: nowrap;
+  }
+
+  header .header_b .osesp {
+    display: flex;
+    width: 60px;
+    height: auto;
   }
 
   main {
-    padding: 0 15% 64px;
+    padding: 64px 15% 64px;
+    background-image: url(images/bcg_main.png);
+    background-repeat: repeat-x;
   }
 
+  main ul {
+    display: flex;
+    justify-content: flex-end;
+  }
   main .hello {
     font-size: 40px;
   }
