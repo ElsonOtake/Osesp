@@ -611,6 +611,7 @@ body.index footer {
     color: #d3d3d3;
     font-size: 16px;
     padding: 56px 0;
+    text-decoration: underline;
   }
 
   header .header_b a {
