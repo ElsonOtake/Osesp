@@ -132,6 +132,10 @@ header .header_b {
   padding: 0 24px;
 }
 
+header .header_b.active .menu_dsk {
+  display: none;
+}
+
 .material-icons-outlined.mob_close {
   display: none;
 }
@@ -585,6 +589,10 @@ body.index footer {
     display: none;
   }
 
+  body.about header .header_b a[href*="partner"] {
+    pointer-events: none;
+  }
+
   header .header_a {
     display: block;
     width: 100%;
@@ -653,6 +661,14 @@ body.index footer {
     display: flex;
     width: 60px;
     height: auto;
+  }
+
+  header .header_b .menu_dsk {
+    display: block;
+  }
+
+  header .header_b .menu_mob {
+    display: none;
   }
 
   main {
