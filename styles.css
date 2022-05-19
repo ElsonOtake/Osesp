@@ -118,6 +118,10 @@ header .header_b.active {
   z-index: 1000;
 }
 
+header .header_b.active img {
+  display: none;
+}
+
 header .header_b.active .mob_close {
   width: fit-content;
   display: flex;
@@ -133,7 +137,8 @@ header .header_b {
 }
 
 header .header_b.active .menu_dsk {
-  display: none;
+  pointer-events: none;
+  color: black;
 }
 
 .material-icons-outlined.mob_close {
@@ -661,14 +666,6 @@ body.index footer {
     display: flex;
     width: 60px;
     height: auto;
-  }
-
-  header .header_b .menu_dsk {
-    display: flex;
-  }
-
-  header .header_b .menu_mob {
-    display: none;
   }
 
   main {
