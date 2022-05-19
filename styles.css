@@ -118,6 +118,22 @@ header .header_b.active {
   z-index: 1000;
 }
 
+.musicians article img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+body.index footer img,
+body.about footer img {
+  width: 30%;
+  height: auto;
+}
+
+header .header_b.active img {
+  display: none;
+}
+
 header .header_b.active .mob_close {
   width: fit-content;
   display: flex;
@@ -133,7 +149,8 @@ header .header_b {
 }
 
 header .header_b.active .menu_dsk {
-  display: none;
+  pointer-events: none;
+  color: black;
 }
 
 .material-icons-outlined.mob_close {
@@ -366,12 +383,6 @@ main .email {
   }
 }
 
-.musicians article img {
-  grid-area: img;
-  width: 100%;
-  height: auto;
-}
-
 .musicians article h3 {
   grid-area: name;
   font-size: 12px;
@@ -555,12 +566,6 @@ body.about footer {
   gap: 10%;
 }
 
-body.index footer img,
-body.about footer img {
-  width: 30%;
-  height: auto;
-}
-
 body.index footer p,
 body.about footer p {
   font-size: 10px;
@@ -661,14 +666,6 @@ body.index footer {
     display: flex;
     width: 60px;
     height: auto;
-  }
-
-  header .header_b .menu_dsk {
-    display: flex;
-  }
-
-  header .header_b .menu_mob {
-    display: none;
   }
 
   main {

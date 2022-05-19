@@ -7,7 +7,6 @@ const header = document.querySelector('.header_b');
 const hamburger = document.querySelector('.mob_menu');
 
 // Classes for close menu
-
 const classNames = ['menu_link', 'mob_close'];
 
 hamburger.addEventListener('click', () => {
@@ -20,6 +19,13 @@ header.addEventListener('click', (event) => {
   const shouldToggle = classNames.some((className) => className === clickedElementClassName);
 
   if (shouldToggle && header.classList.contains('active')) {
+    header.classList.remove('active');
+    body.classList.remove('noscroll');
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (header.classList.contains('active')) {
     header.classList.remove('active');
     body.classList.remove('noscroll');
   }
