@@ -24,7 +24,7 @@ header.addEventListener('click', (event) => {
   }
 });
 
-window.addEventListener("resize", function(){
+window.addEventListener('resize', () => {
   if (header.classList.contains('active')) {
     header.classList.remove('active');
     body.classList.remove('noscroll');

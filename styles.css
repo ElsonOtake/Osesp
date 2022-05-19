@@ -118,6 +118,18 @@ header .header_b.active {
   z-index: 1000;
 }
 
+.musicians article img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+body.index footer img,
+body.about footer img {
+  width: 30%;
+  height: auto;
+}
+
 header .header_b.active img {
   display: none;
 }
@@ -371,12 +383,6 @@ main .email {
   }
 }
 
-.musicians article img {
-  grid-area: img;
-  width: 100%;
-  height: auto;
-}
-
 .musicians article h3 {
   grid-area: name;
   font-size: 12px;
@@ -558,12 +564,6 @@ body.about footer {
   margin: 0 24px;
   padding: 36px 0;
   gap: 10%;
-}
-
-body.index footer img,
-body.about footer img {
-  width: 30%;
-  height: auto;
 }
 
 body.index footer p,
