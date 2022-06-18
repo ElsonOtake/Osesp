@@ -551,9 +551,9 @@ main .email {
   font-weight: 400;
 }
 
-body.index .partner {
+/* body.index .partner {
   display: none;
-}
+} */
 
 body.index footer,
 body.about footer {
@@ -571,14 +571,14 @@ body.about footer p {
   font-size: 10px;
 }
 
-body.index footer .logo_dsk,
+/* body.index footer .logo_dsk, */
 body.about footer .logo_dsk {
   display: none;
 }
 
-body.index footer {
+/* body.index footer {
   display: none;
-}
+} */
 
 @media only screen and (min-width: 768px) {
   body {
