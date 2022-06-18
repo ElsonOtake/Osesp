@@ -148,11 +148,6 @@ header .header_b {
   padding: 0 24px;
 }
 
-/* header .header_b.active .menu_dsk {
-  pointer-events: none;
-  color: black;
-} */
-
 .material-icons-outlined.mob_close {
   display: none;
 }
@@ -570,10 +565,6 @@ body.about footer .logo_dsk {
     display: none;
   }
 
-  body.about header .header_b a[href*="partner"] {
-    pointer-events: none;
-  }
-
   header .header_a {
     display: block;
     width: 100%;
@@ -803,7 +794,7 @@ body.about footer .logo_dsk {
   }
 
   body.about .partner {
-    display: none;
+    margin-bottom: 60px;
   }
 
   body.index footer {
