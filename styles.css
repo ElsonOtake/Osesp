@@ -148,11 +148,6 @@ header .header_b {
   padding: 0 24px;
 }
 
-header .header_b.active .menu_dsk {
-  pointer-events: none;
-  color: black;
-}
-
 .material-icons-outlined.mob_close {
   display: none;
 }
@@ -414,21 +409,6 @@ main .email {
   padding-top: 6px;
 }
 
-.musicians button {
-  width: 100%;
-  border: 1px solid #d3d3d3;
-  border-radius: 2px;
-  height: 40px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.musicians article.desktop {
-  display: none;
-}
-
 .logo {
   background-color: #fff;
 }
@@ -551,10 +531,6 @@ main .email {
   font-weight: 400;
 }
 
-body.index .partner {
-  display: none;
-}
-
 body.index footer,
 body.about footer {
   display: flex;
@@ -571,12 +547,7 @@ body.about footer p {
   font-size: 10px;
 }
 
-body.index footer .logo_dsk,
 body.about footer .logo_dsk {
-  display: none;
-}
-
-body.index footer {
   display: none;
 }
 
@@ -592,10 +563,6 @@ body.index footer {
 
   header .header_b .mob_menu {
     display: none;
-  }
-
-  body.about header .header_b a[href*="partner"] {
-    pointer-events: none;
   }
 
   header .header_a {
@@ -768,14 +735,6 @@ body.index footer {
     width: 360px;
   }
 
-  .musicians article.desktop {
-    display: grid;
-  }
-
-  .musicians button {
-    display: none;
-  }
-
   .logo h2 {
     font-size: 30px;
   }
@@ -835,7 +794,7 @@ body.index footer {
   }
 
   body.about .partner {
-    display: none;
+    margin-bottom: 60px;
   }
 
   body.index footer {

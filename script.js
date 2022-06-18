@@ -95,10 +95,6 @@ container.className = 'container';
 for (let i = 0; i < musicians.length; i += 1) {
   const article = document.createElement('article');
 
-  if (i > 1) {
-    article.className = 'desktop';
-  }
-
   const img = document.createElement('img');
   img.src = musicians[i].photo;
   img.alt = musicians[i].name;
@@ -126,17 +122,4 @@ for (let i = 0; i < musicians.length; i += 1) {
 
 section.appendChild(container);
 
-const button = document.createElement('button');
-button.type = 'button';
-
-const more = document.createElement('span');
-more.innerText = 'MORE';
-button.appendChild(more);
-
-const expand = document.createElement('span');
-expand.className = 'material-icons-outlined md-24 red242';
-expand.innerText = 'expand_more';
-button.appendChild(expand);
-
-section.appendChild(button);
 activities.insertAdjacentElement('afterend', section);
