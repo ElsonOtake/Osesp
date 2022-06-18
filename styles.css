@@ -148,10 +148,10 @@ header .header_b {
   padding: 0 24px;
 }
 
-header .header_b.active .menu_dsk {
+/* header .header_b.active .menu_dsk {
   pointer-events: none;
   color: black;
-}
+} */
 
 .material-icons-outlined.mob_close {
   display: none;
