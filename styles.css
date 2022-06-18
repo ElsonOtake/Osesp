@@ -414,21 +414,6 @@ main .email {
   padding-top: 6px;
 }
 
-.musicians button {
-  width: 100%;
-  border: 1px solid #d3d3d3;
-  border-radius: 2px;
-  height: 40px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.musicians article.desktop {
-  display: none;
-}
-
 .logo {
   background-color: #fff;
 }
@@ -551,10 +536,6 @@ main .email {
   font-weight: 400;
 }
 
-/* body.index .partner {
-  display: none;
-} */
-
 body.index footer,
 body.about footer {
   display: flex;
@@ -571,14 +552,9 @@ body.about footer p {
   font-size: 10px;
 }
 
-/* body.index footer .logo_dsk, */
 body.about footer .logo_dsk {
   display: none;
 }
-
-/* body.index footer {
-  display: none;
-} */
 
 @media only screen and (min-width: 768px) {
   body {
@@ -766,14 +742,6 @@ body.about footer .logo_dsk {
 
   .musicians .container article {
     width: 360px;
-  }
-
-  .musicians article.desktop {
-    display: grid;
-  }
-
-  .musicians button {
-    display: none;
   }
 
   .logo h2 {
