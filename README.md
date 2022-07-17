@@ -13,9 +13,9 @@
 
 ## Live Demo
 
-[Loom presentation video](https://www.loom.com/share/ac982d4c6d50418891805855f75e11f0)
+[Project video](https://www.loom.com/share/ac982d4c6d50418891805855f75e11f0)
 
-[Live Demo Link](https://elsonotake.github.io/Osesp/)
+[Live Demo](https://elsonotake.github.io/Osesp/)
 
 
 ## Getting Started
@@ -28,14 +28,25 @@ A web browser
 
 ### Setup
 
-Copy the following files to your computer:
+Cloning a repository
 
-- index.html
-- about.html
-- styles.css
-- script.js
+- On GitHub.com, navigate to the main page of the repository;
 
-Double click on the index.html to open the main page.
+- Above the list of files, click "Code" button;
+
+- Copy the URL to clone the repository. 
+
+  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/Osesp.git`
+
+  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/Osesp.git`
+
+  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/Osesp`
+
+- Open Terminal;
+
+- Change the current working directory to the location where you want the cloned directory;
+
+- Type `git clone`, and then paste the URL you copied earlier;
 
 
 ## Author
@@ -44,7 +55,7 @@ Double click on the index.html to open the main page.
 
 - GitHub: [@elsonotake](https://github.com/elsonotake)
 - Twitter: [@elsonotake](https://twitter.com/elsonotake)
-- LinkedIn: [Elson Otake](https://linkedin.com/in/elson-otake-0b5b9138)
+- LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
 
 
 ## 🤝 Contributing
@@ -69,4 +80,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
 This design is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
+
+This project is [MIT](https://github.com/ElsonOtake/) licensed.
