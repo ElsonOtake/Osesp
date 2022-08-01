@@ -75,12 +75,11 @@ Give a ⭐️ if you like this project!
 - Microverse
 - W3Schools
 - Stack Overflow
+- [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 
 ## 📝 License
 
-Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-
 This design is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
-This project is [MIT](https://github.com/ElsonOtake/) licensed.
+This project is [MIT](./MIT.md) licensed.
